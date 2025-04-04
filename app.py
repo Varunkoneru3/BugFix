@@ -6,7 +6,7 @@ import re # Import regular expressions for parsing
 # --- Configuration ---
 # (Keep the API key configuration as before)
 try:
-    GOOGLE_API_KEY ="AIzaSyBspPRLy5_IREKmpMqq7ciYc2xhRsOxMdc"
+    GOOGLE_API_KEY =st.secrets["GOOGLE_API_KEY"]
    
 except (FileNotFoundError, KeyError):
     GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
